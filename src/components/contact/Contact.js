@@ -167,7 +167,13 @@ function Contact({ mode }) {
               },
             }}
           >
-            <Typography sx={{ fontSize: "24px", textAlign: "center" }}>
+            <Typography sx={{ fontSize: {
+              md: '24px',
+              xs: '20px'
+            }, textAlign: {
+              md: "center",
+              xs: 'left'
+          } }}>
               Whether you'd like to connect about an opportunity, have a
               question, or just want to say hi, my inbox is always open!
             </Typography>
