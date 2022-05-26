@@ -115,7 +115,7 @@ function Experience({ mode }) {
                 <List>
                   {job.bullets.map((bullet) => (
                     <ListItem>
-                      <ListItemIcon>
+                      <ListItemIcon sx={{mr: '-10px'}}>
                         <ChevronRightIcon
                           sx={{
                             color: mode === "dark" ? "#ff6d91" : "#4285F4",

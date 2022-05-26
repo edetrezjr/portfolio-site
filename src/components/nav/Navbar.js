@@ -31,9 +31,9 @@ function Navbar({ mode, setMode }) {
     setDrawerOpen(false);
   };
 
-  const openResume = () => {
-    window.open(Resume, "_blank");
-  };
+  // const openResume = () => {
+  //   window.open(Resume, "_blank");
+  // };
 
   const handleScroll = (section) => {
     const scroller = Scroll.scroller;
@@ -54,11 +54,22 @@ function Navbar({ mode, setMode }) {
             flexDirection: "row",
             alignItems: "center",
             justifyContent: "space-between",
-            padding: "15px 50px",
+            padding: {
+              md: "15px 50px",
+              xs: "15px 0px",
+            },
           }}
         >
-          <Button color='inherit' onClick={() => handleScroll('heroSection')}>
-            <Typography sx={{color: mode === "dark" ? "#ff6d91" : "#4285F4", fontSize: '24px', fontWeight: '700'}}>ED</Typography>
+          <Button color="inherit" onClick={() => handleScroll("heroSection")}>
+            <Typography
+              sx={{
+                color: mode === "dark" ? "#ff6d91" : "#4285F4",
+                fontSize: "24px",
+                fontWeight: "700",
+              }}
+            >
+              ED
+            </Typography>
           </Button>
           <Box
             sx={{
@@ -104,10 +115,13 @@ function Navbar({ mode, setMode }) {
               Contact
             </Button>
             <Button
-              sx={{ margin: "0rem 0.5rem" }}
+              href={Resume}
+              target="_blank"
+              sx={{
+                margin: "0rem 0.5rem",
+              }}
               color="inherit"
               variant="outlined"
-              onClick={() => {openResume()}}
             >
               Resume
             </Button>
@@ -211,6 +225,8 @@ function Navbar({ mode, setMode }) {
                   Contact
                 </Button>
                 <Button
+                  href={Resume}
+                  target='_blank'
                   sx={{
                     padding: "auto",
                     margin: "20px auto",
@@ -219,7 +235,6 @@ function Navbar({ mode, setMode }) {
                   }}
                   color="inherit"
                   variant="outlined"
-                  onClick={() => {openResume()}}
                 >
                   Resume
                 </Button>

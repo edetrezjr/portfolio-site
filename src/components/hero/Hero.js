@@ -5,9 +5,9 @@ import Resume from '../../assets/Edwin_Detrez_Resume_SoftwareEngineer.pdf'
 
 function Hero({mode}) {
 
-  const openResume = () => {
-    window.open(Resume, '_blank')
-  }
+  // const openResume = () => {
+  //   window.open(Resume, '_blank')
+  // }
 
   return (
     <Container
@@ -26,7 +26,7 @@ function Hero({mode}) {
           <Typography
             sx={{
               fontFamily: "Roboto",
-              fontSize: "clamp(14px, 3vw, 20px)",
+              fontSize: "clamp(18px, 3vw, 20px)",
               lineHeight: 1,
               mb: "1.5rem",
             }}
@@ -59,7 +59,7 @@ function Hero({mode}) {
           </Typography>
           <Typography
             sx={{
-              fontSize: "clamp(14px, 2vw, 20px)",
+              fontSize: "clamp(18px, 2vw, 20px)",
               fontFamily: "Roboto",
               maxWidth: "640px",
             }}
@@ -71,7 +71,7 @@ function Hero({mode}) {
           </Typography>
           <Button
             variant="outlined"
-            onClick={() => {openResume()}}
+            href={Resume}
             sx={{
               color: mode === "dark" ? "#ff6d91" : "#4285F4",
               borderColor: mode === "dark" ? "#ff6d91" : "#4285F4",
