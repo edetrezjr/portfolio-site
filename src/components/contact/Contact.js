@@ -32,7 +32,11 @@ function Contact({ mode }) {
         flexDirection: "column",
         padding: "1rem",
         mt: "200px",
-        mb: "100px",
+        mb: {
+          md: "100px",
+          xs: '50px'
+        }
+          ,
       }}
       name="contactSection"
     >
