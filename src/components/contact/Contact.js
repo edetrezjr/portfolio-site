@@ -182,7 +182,10 @@ function Contact({ mode }) {
                   borderColor: mode === "dark" ? "#4285F4" : "#ff6d91",
                   color: mode === "dark" ? "#4285F4" : "#ff6d91",
                 },
-                width: "33%",
+                width: {
+                  md: "33%",
+                  xs: '50%'
+                },
                 border: "2px solid",
                 fontFamily: "Roboto",
                 fontSize: 'clamp(14px, 3vw, 18px)',
