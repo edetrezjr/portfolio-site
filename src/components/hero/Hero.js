@@ -71,7 +71,7 @@ function Hero({mode}) {
           </Typography>
           <Button
             variant="outlined"
-            onClick={openResume}
+            onClick={() => {openResume()}}
             sx={{
               color: mode === "dark" ? "#ff6d91" : "#4285F4",
               borderColor: mode === "dark" ? "#ff6d91" : "#4285F4",

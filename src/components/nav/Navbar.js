@@ -42,6 +42,7 @@ function Navbar({ mode, setMode }) {
       smooth: "easeInOutQuad",
       offset: -150,
     });
+    handleDrawerClose();
   };
 
   return (
@@ -106,7 +107,7 @@ function Navbar({ mode, setMode }) {
               sx={{ margin: "0rem 0.5rem" }}
               color="inherit"
               variant="outlined"
-              onClick={openResume}
+              onClick={() => {openResume()}}
             >
               Resume
             </Button>
@@ -218,7 +219,7 @@ function Navbar({ mode, setMode }) {
                   }}
                   color="inherit"
                   variant="outlined"
-                  onClick={openResume}
+                  onClick={() => {openResume()}}
                 >
                   Resume
                 </Button>
