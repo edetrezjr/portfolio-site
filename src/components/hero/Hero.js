@@ -14,9 +14,10 @@ function Hero({mode}) {
       sx={{
         maxWidth: "1600px",
         padding: '1rem',
-        minHeight: "100vh",
+        height: "100%",
         display: "flex",
         alignItems: "center",
+        m: '200px auto'
       }}
       name="heroSection"
     >

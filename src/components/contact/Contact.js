@@ -27,12 +27,12 @@ function Contact({ mode }) {
     <Container
       sx={{
         maxWidth: "1600px",
-        minHeight: "50vh",
+        minHeight: "100%",
         display: "flex",
         flexDirection: "column",
         padding: "1rem",
-        mt: "5rem",
-        mb: "5em",
+        mt: "200px",
+        mb: "100px",
       }}
       name="contactSection"
     >

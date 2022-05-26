@@ -25,10 +25,11 @@ function About({ mode }) {
     <Container
       sx={{
         maxWidth: "1600px",
-        minHeight: "100vh",
+        minHeight: "100%",
         display: "flex",
         flexDirection: "column",
         padding: "1rem",
+        m: '150px auto'
       }}
       name="aboutSection"
     >

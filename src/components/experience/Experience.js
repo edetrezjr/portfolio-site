@@ -31,11 +31,12 @@ function Experience({ mode }) {
         display: "flex",
         flexDirection: "column",
         padding: "1rem",
-        height: "75vh",
+        height: "100%",
         mt: {
-          xs: "5rem",
-          sm: "0rem",
+          xs: "150px",
+          sm: "0px",
         },
+        mb: '150px'
       }}
       name="experienceSection"
     >

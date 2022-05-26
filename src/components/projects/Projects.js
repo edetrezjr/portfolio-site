@@ -19,11 +19,12 @@ function Projects({ mode }) {
         display: "flex",
         flexDirection: "column",
         padding: "1rem",
-        height: "75vh",
+        height: "100%",
         mt: {
-          xs: "5rem",
-          sm: "0rem",
+          xs: "150px",
+          sm: "200px",
         },
+        mb: '200px',
       }}
       name="workSection"
     >
