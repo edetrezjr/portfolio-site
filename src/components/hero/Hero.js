@@ -16,7 +16,10 @@ function Hero({ mode }) {
         height: "100%",
         display: "flex",
         alignItems: "center",
-        m: "200px auto",
+        m: {
+          md: "200px auto",
+          xs: '100px auto 200px'
+      },
       }}
       name="heroSection"
     >
