@@ -1,10 +1,9 @@
 import { Box, Container, Typography, Button } from "@mui/material";
-import {Fade} from "react-awesome-reveal";
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-import Resume from '../../assets/Edwin_Detrez_Resume_SoftwareEngineer.pdf'
+import { Fade } from "react-awesome-reveal";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import Resume from "../../assets/Edwin_Detrez_Resume_SoftwareEngineer.pdf";
 
-function Hero({mode}) {
-
+function Hero({ mode }) {
   // const openResume = () => {
   //   window.open(Resume, '_blank')
   // }
@@ -13,15 +12,15 @@ function Hero({mode}) {
     <Container
       sx={{
         maxWidth: "1600px",
-        padding: '1rem',
+        padding: "1rem",
         height: "100%",
         display: "flex",
         alignItems: "center",
-        m: '200px auto'
+        m: "200px auto",
       }}
       name="heroSection"
     >
-      <Fade triggerOnce='true'>
+      <Fade triggerOnce="true">
         <Box sx={{ width: "100%" }}>
           <Typography
             sx={{
@@ -72,15 +71,16 @@ function Hero({mode}) {
           <Button
             variant="outlined"
             href={Resume}
+            target="_blank"
             sx={{
               color: mode === "dark" ? "#ff6d91" : "#4285F4",
               borderColor: mode === "dark" ? "#ff6d91" : "#4285F4",
               "&:hover": {
-                border: '2px solid',
+                border: "2px solid",
                 borderColor: mode === "dark" ? "#4285F4" : "#ff6d91",
                 color: mode === "dark" ? "#4285F4" : "#ff6d91",
               },
-              border: '2px solid',
+              border: "2px solid",
               fontFamily: "Roboto",
               fontSize: "22px",
               mt: "2rem",
@@ -89,7 +89,7 @@ function Hero({mode}) {
             }}
           >
             Resume
-            <OpenInNewIcon sx={{ml: '5px'}}/>
+            <OpenInNewIcon sx={{ ml: "5px" }} />
           </Button>
         </Box>
       </Fade>

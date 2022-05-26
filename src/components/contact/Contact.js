@@ -41,7 +41,10 @@ function Contact({ mode }) {
           sx={{
             borderBottom: "2px solid",
             borderBottomColor: mode === "dark" ? "#ff6d91" : "#4285F4",
-            width: "33%",
+            width: {
+              xs: '50%',
+              md: '33%'
+            },
           }}
         >
           <Typography
@@ -182,12 +185,9 @@ function Contact({ mode }) {
                 width: "33%",
                 border: "2px solid",
                 fontFamily: "Roboto",
-                fontSize: {
-                  md: "22px",
-                  xs: "18px",
-                },
+                fontSize: 'clamp(14px, 3vw, 18px)',
                 mt: "2rem",
-                p: "auto 25px",
+                p: "auto",
                 mb: "1rem",
               }}
             >

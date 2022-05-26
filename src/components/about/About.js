@@ -38,7 +38,10 @@ function About({ mode }) {
           sx={{
             borderBottom: "2px solid",
             borderBottomColor: mode === "dark" ? "#ff6d91" : "#4285F4",
-            width: "33%",
+            width: {
+              xs: '50%',
+              md: '33%'
+            },
           }}
         >
           <Typography

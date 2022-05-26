@@ -19,7 +19,10 @@ export default function TabPanel(props) {
       }}
     >
       {value === index && (
-        <Box sx={{ pl: "2rem" }}>
+        <Box sx={{ pl: {
+          md: "2rem",
+          xs: '0px'
+        } }}>
           <Typography>{children}</Typography>
         </Box>
       )}
