@@ -29,7 +29,7 @@ function About({ mode }) {
         display: "flex",
         flexDirection: "column",
         padding: "1rem",
-        m: '150px auto'
+        m: "150px auto",
       }}
       name="aboutSection"
     >
@@ -39,8 +39,8 @@ function About({ mode }) {
             borderBottom: "2px solid",
             borderBottomColor: mode === "dark" ? "#ff6d91" : "#4285F4",
             width: {
-              xs: '50%',
-              md: '33%'
+              xs: "50%",
+              md: "33%",
             },
           }}
         >
@@ -91,12 +91,12 @@ function About({ mode }) {
             >
               I'm a software engineering graduate of Fullstack Academy. Prior to
               becoming a software engineer, I was a Cybersecurity Flight
-              Commander in the United States Air Force. The squadron I lead
-              developed secure software and interfaces, using innovative tech
-              like AR/VR, to train Space and Missile Operators. I'm currently a
-              Software Engineering Mentor at Fullstack Academy, teaching student
-              engineers full stack development using Javascript, React, Node,
-              Express, and PostgreSQL!
+              Commander in the United States Air Force. The squadron I was
+              responsible for developed secure software and interfaces, using
+              innovative tech like AR/VR, to train Space and Missile Operators.
+              I'm currently a Software Engineering Mentor at Fullstack Academy,
+              teaching student engineers full stack development using
+              Javascript, React, Node, Express, and PostgreSQL!
             </Typography>
             <Typography
               sx={{
@@ -169,12 +169,12 @@ function About({ mode }) {
                 zIndex: "-1",
                 ml: {
                   md: "-17rem",
-                  xs: '-8rem',
+                  xs: "-8rem",
                 },
                 mt: {
                   md: "2rem",
-                  xs: "1.5rem"
-              },
+                  xs: "1.5rem",
+                },
               }}
             ></Box>
           </Box>
